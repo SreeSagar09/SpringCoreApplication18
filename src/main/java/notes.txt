@@ -1,0 +1,14 @@
+A Program to demonstrate the use of @Value annotation:
+Programs:
+* DynamicValuesComponent.java
+* StaticValuesComponent.java
+* Test.java
+Note:
+* @Value annotation is used for expression-driven or property-driven dependency injection.
+* @Value annotation used at the field or method/constructor parameter level that indicates a default value expression for the annotated element.
+* @Value annotation has only one attribute value.
+* If the injected value is compatible with field or method/constructor parameter it will throw exception org.springframework.beans.factory.UnsatisfiedDependencyException 
+
+Output:
+StaticValuesComponent [name=Sree Sagar, value=30, sumInteger=36, subtInteger=28, multInteger=18, divDouble=2.0, randomInteger=340374843, randomDouble=0.15511529675494085, maxValue=55, minValue=25, stringLength=6, stringArray=[A, B, C, D]]
+DynamicValuesComponent [name=Sree Sagar, integerValue=305, sumInteger=36, subtInteger=28, multInteger=18, divDouble=2.0, randomInteger=252300648, randomDouble=0.007512795669035954, maxValue=55, minValue=25, stringLength=6, stringArray=[A, B, C, D], randomIntegerString=-317413380+Sagar]
